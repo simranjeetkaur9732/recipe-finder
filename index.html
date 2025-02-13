@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RECIPE FINDER</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="top-nav">
+        <div class="logo-section">
+          <canvas id="coffeeLogo" width="40" height="40"></canvas>
+          <h1>RECIPE FINDER</h1>
+        </div>
+
+        <div class="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#recipes">Recipes</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <form>
+          <input
+            type="text"
+            placeholder="Search for recipes..."
+            class="searchbox"
+          />
+          <button type="submit" class="searchbutton">Search</button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="section-visible">
+        <div class="categories-container">
+          <button class="category-btn active" data-category="all">
+            All Recipes
+          </button>
+          <button class="category-btn" data-category="Breakfast">
+            Breakfast
+          </button>
+          <button class="category-btn" data-category="Lunch">Lunch</button>
+          <button class="category-btn" data-category="Dinner">Dinner</button>
+          <button class="category-btn" data-category="Dessert">Dessert</button>
+          <button class="category-btn" data-category="Vegetarian">
+            Vegetarian
+          </button>
+        </div>
+
+        <div class="loader">
+          <div class="spinner"></div>
+        </div>
+
+        <div class="recipecontainer">
+          <h2>Search your favorite recipes!</h2>
+        </div>
+
+        <div class="recipe-details">
+          <div class="recipe-details-content"></div>
+          <button type="button" class="recipe-close-button">Close</button>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section-hidden">
+        <div class="about-container">
+          <h2>About Recipe Finder</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <h3>Our Story</h3>
+              <p>
+                Welcome to Recipe Finder, your ultimate destination for culinary
+                inspiration! We started this platform with a simple mission: to
+                make cooking accessible, enjoyable, and exciting for everyone.
+              </p>
+
+              <h3>Our Mission</h3>
+              <p>
+                We believe that good food brings people together. Our goal is to
+                provide you with a diverse collection of recipes from around the
+                world, helping you discover new flavors and create memorable
+                meals.
+              </p>
+
+              <div class="features">
+                <div class="feature">
+                  <h4>10,000+ Recipes</h4>
+                  <p>Access to thousands of curated recipes</p>
+                </div>
+                <div class="feature">
+                  <h4>Global Cuisine</h4>
+                  <p>Discover dishes from around the world</p>
+                </div>
+                <div class="feature">
+                  <h4>Easy to Follow</h4>
+                  <p>Step-by-step instructions for every recipe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="section-hidden">
+        <div class="blog-container">
+          <h2>Latest Food Stories</h2>
+          <div class="blog-grid">
+            <article class="blog-post">
+              <h3>Seasonal Cooking Tips</h3>
+              <p>
+                Make the most of seasonal ingredients with our expert tips...
+              </p>
+            </article>
+            <article class="blog-post">
+              <h3>Kitchen Essentials</h3>
+              <p>Must-have tools for every home chef...</p>
+            </article>
+            <article class="blog-post">
+              <h3>Food Photography</h3>
+              <p>Tips for taking Instagram-worthy food photos...</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-hidden">
+        <div class="contact-container">
+          <h2>Get in Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <p>📍LPU</p>
+              <p>📧 abc@gmail.com</p>
+              <p>📞 +918989898989</p>
+            </div>
+            <form class="contact-form">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Subject" />
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Recipe Finder</h3>
+          <p>Your gateway to delicious meals. Search, explore, and create culinary magic!</p>
+          <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Pinterest</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <ul>
+            <li><a href="#">Breakfast</a></li>
+            <li><a href="#">Lunch</a></li>
+            <li><a href="#">Dinner</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Vegetarian</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe for new recipes and cooking tips!</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy 2024 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
 
